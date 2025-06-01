@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="km">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+   <title>College of Science and Technology</title>
+   <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .menu-bar {
+      background-color: navy;
+      text-align: center;
+      padding: 8px 0;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0; 
+    }
+
+    .menu-bar a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      padding: 8px 10px;
+      transition: background 0.2s, color 0.2s;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .menu-bar a:hover {
+      background-color: #01860c;
+      color: rgb(237, 240, 237);
+      border-radius: 5px;
+    }
+
+    .welcome, .gallery, .section-title, .footer, .img-modal, .img-modal-content, .img-modal-close, .dropdown-menu, .dropdown-menu a, .dropdown-menu span, .dropdown-menu div {
+      font-family: "Times New Roman", Times, serif !important;
+    }
+
+    .welcome {
+      padding: 15px;
+      text-align: justify;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+
+    .section-title {
+      background-color: navy;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .section-title img {
+      width: 50px;
+    }
+
+    .footer {
+      background-color: navy;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .footer img {
+     
+      border: none;
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+   
+    .img-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+      .section-title {
+        flex-direction: column;
+      }
+    
+    
+    </style>
+  </head>
+ <body>
+
+  
+  <div class="top-banner" style="overflow:hidden; position:relative; height:120px;">
+  <h2 style="color:white;background-color: darkblue;">
+    <marquee behavior="scroll" direction="left" scrollamount="30">
+      <img src="images/banner.jpg" alt="College of Science and Technology logo with text Technology Innovation Creativity in a blue and white banner, formal and academic tone">
+    </marquee>
+  </h2>
+  </div>
+
+  
+  <div class="menu-bar">
+    <a href="">Home</a>
+    <a href="new.html">News</a>
+    <a href="facultymembers.html">Faculty Members</a>
+    <a href="Training.html">Professional Training</a>
+    <a href="video cost.html">Video CoST</a>
+    <div class="dropdown" style="display:inline-block; position:relative;">
+      <a href="#" class="dropdown-toggle" style="cursor:pointer;">Degree Programs</a>
+      <div class="dropdown-menu" style="display:none; position:absolute; left:0; top:100%; background:rgb(255,255,255); min-width:220px; box-shadow:0 2px 8px #0002; z-index:1000; text-align:left; border-radius:6px; overflow:hidden;">
+      <a href="IT.html" style="color:#000; display:block; padding:px 9px; text-decoration:none;">
+        Information Technology
+        <span style="color:blue; float:right;">Since 2003</span>
+      </a>
+      <a href="CS.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        <i>Computer Science  style="color:blue; float:right;">Since 2003</i>i>
+        
+      </a>
+      <a href="ETC.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Electronics and Telecommunications
+        <span style="color:red; float:right;">Since 2003</span>
+      </a>
+      <a href="GDM.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Graphic Design And Multimedia
+        <span style="color:red; float:right;">New 2026</span>
+      </a>
+      <a href="BMIT.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Business Management Information Technology
+        <span style="color:red; float:right;">New 2026</span>
+      </a>
+      <a href="NECS.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Network Engineering and Cyber Security
+        <span style="color:red; float:right;">New 2026</span>
+      </a>
+      <a href="DSAL.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Data Science and Artificial Intelligence <i style="color:red; float:right;">New 2026</i>
+        
+      </a>
+      </div>
+    </div>
+    <div class="dropdown" style="display:inline-block; position:relative;">
+      <a href="#" class="dropdown-toggle" style="cursor:pointer;">Computer Labs</a>
+      <div class="dropdown-menu" style="display:none; position:absolute; left:0; top:100%; background:rgb(255,255,255); min-width:220px; box-shadow:0 2px 8px #0002; z-index:1000; text-align:left; border-radius:6px; overflow:hidden;">
+      <a href="Lab1.html" style="color:#000; display:block; padding:8px 5px; text-decoration:none;">
+        Multimedia Lab
+      </a>
+      <a href="Lab2.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        E-learning
+      </a>
+      <a href="Lab3.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        Networking Lab
+      </a>
+      <a href="Lab4.html" style="color:#000; display:block; padding:10px 18px; text-decoration:none;">
+        IT Center Lab
+      </a>
+      </div>
+    </div>
+    <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(function(dropdown) {
+      var menu = dropdown.querySelector('.dropdown-menu');
+      dropdown.addEventListener('mouseenter', function() {
+        menu.style.display = 'block';
+      });
+      dropdown.addEventListener('mouseleave', function() {
+        menu.style.display = 'none';
+      });
+      });
+    });
+    </script>
+    </div>
+    <style>
+    .dropdown-menu a:hover {
+      background: linear-gradient(90deg, #e0e7ff 0%, #b3c6ff 100%);
+      color: #003366 !important;
+    }
+    .dropdown-toggle {
+      position: relative;
+    }
+    
+    </style>
+
+  <div>
+    <p>
+      សូមស្វាគមន៍មកកាន់មហាវទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។ 
+      សម្រាប់បុគ្គលដែលមានបំណងបន្តការសិក្សាសម្រាប់សញ្ញាប័ត្រឈានមុខ (AA) និងបរិញ្ញាប័ត្រ (BA) 
+      សូមចុះឈ្មោះឥឡូវនេះ ឬអញ្ជើញមកទស្សនាមហាវិទ្យាល័យកម្ពុជាផ្ទាល់។
+      Welcome to College of Science and Technology of The University of Cambodia. 
+      For everyone who wishes to pursue for any AA and BA degrees of the study programs, 
+      please register now or visit the campus of The University of Cambodia.
+        </p>
+      
+        <div style="font-weight:bold; margin-top:10px; font-family:'Courier New', Courier, monospace; font-size:1.3em; letter-spacing:2px; text-align:center;">
+          Studying Activities​ Labs
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/a.jpg" alt="A" class="enlarge-img">
+            <div class="gallery-label label-box">Web Development-HTML CSS</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/b.JPG" alt="B" class="enlarge-img">
+            <div class="gallery-label label-box">Studying Multimedia Lab</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/c.jpg" alt="C" class="enlarge-img">
+            <div class="gallery-label label-box">Studying IT-Center Lab</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/d.jpg" alt="D" class="enlarge-img">
+            <div class="gallery-label label-box">Graduation 2025</div>
+          </div>
+        </div>
+
+        <h2 style="color:white;background-color: darkblue;">
+          <marquee behavior="scroll" direction="left" scrollamount="20">
+            <img src="images/cost.jpg" alt="Images" style="width: 130px;height: 50px;">
+            ស្វាគមន៍!​ IT EXPERT College Science and Technology
+          </marquee>
+        </h2>
+
+        <p style="text-align:center; font-size:22px;">Computer Labs College CoST</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/e.jpg" alt="E" class="enlarge-img">
+            <div class="gallery-label label-box">Multimedia Lab</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/f.jpg" alt="F" class="enlarge-img">
+            <div class="gallery-label label-box">Networking Lab</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/g.jpg" alt="G" class="enlarge-img">
+            <div class="gallery-label label-box">IT-Center Lab</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/h.jpg" alt="H" class="enlarge-img">
+            <div class="gallery-label label-box">IT-Center Update</div>
+          </div>
+        </div>
+
+        <style>
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 18px;
+          justify-items: center;
+          margin: 20px auto 10px auto;
+          max-width: 1400px;
+        }
+        .gallery-item {
+          text-align: center;
+        }
+        .gallery-item img.enlarge-img {
+          width: 100%;
+          max-width: 329px;
+          height: 250px;
+          border: 3px solid yellow;
+          cursor: pointer;
+          object-fit: cover;
+          background: #fff;
+          border-radius: 6px;
+          box-sizing: border-box;
+        }
+        .gallery-label {
+          font-weight: bold;
+          color: black;
+          margin-top: 5px;
+        }
+        .label-box {
+          display: inline-block;
+          background: #fffbe6;
+          border: 2px solid #ffd700;
+          border-radius: 8px;
+          padding: 6px 22px;
+          margin-top: 10px;
+          font-size: 1.1em;
+          box-shadow: 0 2px 6px #0001;
+        }
+        @media (max-width: 900px) {
+          .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 700px;
+          }
+        }
+        @media (max-width: 600px) {
+          .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 100%;
+          }
+          .gallery-item img.enlarge-img {
+            max-width: 100%;
+            height: 150px;
+          }
+        }
+        </style>
+
+        <script>
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('img-modal');
+            var modalImg = document.getElementById('img-modal-img');
+            var closeBtn = document.getElementById('img-modal-close');
+            var imgs = document.querySelectorAll('.enlarge-img');
+
+            imgs.forEach(function(img) {
+              img.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;
+                modalImg.alt = this.alt || '';
+                modalImg.style.width = '400px';
+                modalImg.style.height = '280px';
+              });
+            });
+
+            closeBtn.addEventListener('click', function() {
+              modal.style.display = 'none';
+              modalImg.src = '';
+            });
+
+           
+            modal.addEventListener('click', function(e) {
+              if (e.target === modal) {
+                modal.style.display = 'none';
+                modalImg.src = '';
+              }
+            });
+          });
+        </script>
+
+        <div class="img-modal" id="img-modal">
+          <div class="img-modal-content">
+            <button class="img-modal-close" id="img-modal-close" title="Close">&times;</button>
+            <img src="" alt="Enlarged" id="img-modal-img">
+          </div>
+        </div>
+
+
+  <div class="footer">
+    <img src="images/uc.png" width="40px" height="40px"> © University of Cambodia
+  </div>
+
+     </body>
+</html>
